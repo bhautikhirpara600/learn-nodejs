@@ -2,6 +2,8 @@
 import fs from "node:fs/promises";
 
 //async but callback hell
+// import fs from "node:fs";
+
 // fs.readFile("./text.txt", "utf-8", (err, data) => {
 //   if (err) {
 //     console.log(err);
@@ -11,6 +13,8 @@ import fs from "node:fs/promises";
 // });
 
 //sync
+// import fs from "node:fs";
+
 // const content = fs.readFileSync("./text.txt", "utf-8");
 // console.log(content);
 
