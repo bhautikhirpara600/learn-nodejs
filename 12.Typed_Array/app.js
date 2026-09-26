@@ -27,6 +27,13 @@
 // typedArray[3] = 0b00101010; // binary representation of 42
 // console.log(typedArray); // Output: Int8Array(4) [ 42, 42, 42, 42 ]
 
-const typedArray = new Int8Array([36, 0x5b, 0o75, 0b00111010]); // Create a typed array with initial values
-console.log(typedArray); // Output: Int8Array(4) [ 36, 91, 61, 58 ]
+const typedArray = new Int8Array([
+  0x42, 0x68, 0x61, 0x75, 0x74, 0x69, 0x6b, 0x20, 0x48, 0x69, 0x72, 0x70, 0x61,
+  0x72, 0x61,
+]); // Hex values for "Bhautik Hirpara"
 
+console.log(typedArray);
+
+const decoder = new TextDecoder("utf-8");
+const decodedString = decoder.decode(typedArray);
+console.log(decodedString); // Output: "Bhautik Hirpara"
